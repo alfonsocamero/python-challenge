@@ -20,3 +20,4 @@ with open(csvpath) as csvfile:
     
 for net in range(len(profit_loss)):
     total_months = len(profit_loss)
+    net_total = net_total +(int(profit_loss[net]))
