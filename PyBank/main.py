@@ -4,7 +4,8 @@ import csv
 total_months = 0
 profit_loss = []
 net_total = 0
-avg_delta = []
+running_delta = []
+running_delta_total = 0
 
 #Create and define csvpath
 csvpath = os.path.join('..', 'PyBank', 'Resources', 'budget_data.csv')
@@ -21,3 +22,5 @@ with open(csvpath) as csvfile:
 for net in range(len(profit_loss)):
     total_months = len(profit_loss)
     net_total = net_total +(int(profit_loss[net]))
+
+for net in range(len(profit_loss)-1):

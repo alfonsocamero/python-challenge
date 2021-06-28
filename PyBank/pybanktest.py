@@ -25,4 +25,4 @@ for net in range(len(profit_loss)):
     avg_delta.append((int(profit_loss[net])) - (int(profit_loss[net-1])))
 print(total_months)
 print(net_total)
-print(avg_delta[net - 1])
+print(avg_delta)
