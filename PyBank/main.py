@@ -24,3 +24,5 @@ for net in range(len(profit_loss)):
     net_total = net_total +(int(profit_loss[net]))
 
 for net in range(len(profit_loss)-1):
+    running_delta.append((int(profit_loss[net+1])) - (int(profit_loss[net])))
+    
