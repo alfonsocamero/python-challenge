@@ -17,4 +17,6 @@ with open(csvpath) as csvfile:
 
     for row in budget_data:
 	    profit_loss.append(row[1])
-    print(profit_loss)
+    
+for net in range(len(profit_loss)):
+    total_months = len(profit_loss)
