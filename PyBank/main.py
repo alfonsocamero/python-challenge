@@ -28,7 +28,7 @@ for net in range(len(profit_loss)-1):
     running_delta_total = running_delta_total +(int(running_delta[net]))
     avg_delta = running_delta_total/(len(running_delta))
 print("Total months: " + total_months)
-print(net_total)
+print("Total: " + net_total)
 print(profit_loss)
 print(running_delta_total)
 print(avg_delta)
