@@ -50,3 +50,16 @@ print(f'{name1}: {name1_percentage:.3f} ({name1_count})')
 print(f'{name2}: {name2_percentage:.3f} ({name2_count})')
 print(f'{name3}: {name3_percentage:.3f} ({name3_count})')
 print(f'{name4}: {name4_percentage:.3f} ({name4_count})')
+
+output_path = os.path.join('..', 'PyPoll', 'Analysis', 'election_data_analysis.txt')
+
+with open(output_path, "w") as text_file:
+
+ # Write the Title
+    text_file.write("Election Results " + " " + "\n")
+
+    # Write the results
+    text_file.write("Total Votes: " + str(total_votes) + " " + "\n")
+    text_file.write(f'{name1}: {name1_percentage:.3f} ({name1_count})' "\n")
+    text_file.write(f'{name2}: {name2_percentage:.3f} ({name2_count})' "\n")
+    text_file.write(f'{name4}: {name4_percentage:.3f} ({name4_count})' "\n")
