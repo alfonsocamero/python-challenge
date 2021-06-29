@@ -42,3 +42,17 @@ print("Total: " + str(net_total))
 print("Average Change: " + str(avg_delta))
 print(str(dates_list[greatest_increase_date]) + " " + str(greatest_increase))
 print(str(dates_list[greatest_decrease_date]) + " " + str(greatest_decrease))
+
+output_path = os.path.join('..', 'PyBank', 'Analysis', 'budget_data_analysis.txt')
+
+with open(output_path, "w") as text_file:
+
+ # Write the Title
+    text_file.write("Financial Analysis " + " " + "\n")
+
+    # Write the second-sixth row
+    text_file.write("Total months: " + str(total_months) + "\n")
+    text_file.write("Total: " + str(net_total)+ "\n")
+    text_file.write("Average Change: " + str(avg_delta)+ "\n")
+    text_file.write(str(dates_list[greatest_increase_date]) + " " + str(greatest_increase) + "\n")
+    text_file.write(str(dates_list[greatest_decrease_date]) + " " + str(greatest_decrease) + "\n")
