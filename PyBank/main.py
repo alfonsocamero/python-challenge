@@ -53,6 +53,6 @@ with open(output_path, "w") as text_file:
     # Write the second-sixth row
     text_file.write("Total months: " + str(total_months) + "\n")
     text_file.write("Total: $" + str(net_total)+ "\n")
-    text_file.write(f'Average Change: $ {avg_delta:.2f}' "\n")
+    text_file.write(f'Average Change: ${avg_delta:.2f}' "\n")
     text_file.write(str(dates_list[greatest_increase_date]) + " $" + str(greatest_increase) + "\n")
     text_file.write(str(dates_list[greatest_decrease_date]) + " $" + str(greatest_decrease) + "\n")
