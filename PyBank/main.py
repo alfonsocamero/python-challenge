@@ -31,6 +31,9 @@ for net in range(len(profit_loss)-1):
     avg_delta = running_delta_total/(len(running_delta))
     greatest_increase = max(running_delta)
     greatest_decrease = min(running_delta)
+for index in range(len(running_delta)):
+    if running_delta[index] == greatest_increase:
+        greatest_increase_date = (index + 1)
 
 print("Total months: " + str(total_months))
 print("Total: " + str(net_total))
