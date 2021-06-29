@@ -34,6 +34,8 @@ for net in range(len(profit_loss)-1):
 for index in range(len(running_delta)):
     if running_delta[index] == greatest_increase:
         greatest_increase_date = (index + 1)
+    if running_delta[index] == greatest_decrease:
+        greatest_decrease_date = (index + 1)
 
 print("Total months: " + str(total_months))
 print("Total: " + str(net_total))
