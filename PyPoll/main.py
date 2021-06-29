@@ -35,8 +35,18 @@ for count in range(len(all_votes)):
         name1_count = name1_count + 1
     if name2 == all_votes[count]:
         name2_count = name2_count + 1
+    if name3 == all_votes[count]:
+        name3_count = name3_count + 1
+    if name4 == all_votes[count]:
+        name4_count = name4_count + 1
+    name1_percentage = (name1_count / total_votes) * 100
+    name2_percentage = (name2_count / total_votes) * 100
+    name3_percentage = (name3_count / total_votes) * 100
+    name4_percentage = (name4_count / total_votes) * 100
 
 print("Election Results")
 print("Total Votes: " + str(total_votes))
-print(str(name1) + ": " + str(name1_count))
-print(str(name2) + ": " + str(name2_count))
+print(str(name1) + ": " + str(name1_percentage) + str(name1_count))
+print(str(name2) + ": " + str(name2_percentage) + str(name2_count))
+print(str(name3) + ": " + str(name3_percentage) + str(name3_count))
+print(str(name4) + ": " + str(name4_percentage) + str(name4_count))
