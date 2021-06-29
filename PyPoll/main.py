@@ -46,7 +46,7 @@ for count in range(len(all_votes)):
 
 print("Election Results")
 print("Total Votes: " + str(total_votes))
-print(str(name1) + ": " + str(name1_percentage) + str(name1_count))
-print(str(name2) + ": " + str(name2_percentage) + str(name2_count))
-print(str(name3) + ": " + str(name3_percentage) + str(name3_count))
-print(str(name4) + ": " + str(name4_percentage) + str(name4_count))
+print(f'{name1}: {name1_percentage:.3f} ({name1_count})')
+print(f'{name2}: {name2_percentage:.3f} ({name2_count})')
+print(f'{name3}: {name3_percentage:.3f} ({name3_count})')
+print(f'{name4}: {name4_percentage:.3f} ({name4_count})')
