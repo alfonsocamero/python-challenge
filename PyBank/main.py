@@ -40,3 +40,5 @@ for index in range(len(running_delta)):
 print("Total months: " + str(total_months))
 print("Total: " + str(net_total))
 print("Average Change: " + str(avg_delta))
+print(str(dates_list[greatest_increase_date]) + " " + str(greatest_increase))
+print(str(dates_list[greatest_decrease_date]) + " " + str(greatest_decrease))
